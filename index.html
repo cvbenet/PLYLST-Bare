@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.active {font-weight: bold;}
+		.loader {
+		border:1px solid transparent;
+		height:1px;
+		}	
+		.load-progress {
+			width:0px;
+			background-color:#000;
+			height:5px;
+		}
+		.play-progress {
+			width:0px;
+			background-color:#000;
+			height:5px;
+		}
+	</style>
+</head>
+<body>
+
+<audio id="audio" preload="auto"></audio>
+
+	<div class="controls">
+		<a class="back" href="#">Back</a>
+		<a class="play" href="#">Play</a>
+		<a class="pause" href="#">Pause</a>
+		<a class="next" href="#">Next</a>
+	</div>
+
+	<div class="loader">
+        <div class="load-progress">
+            <div class="play-progress"></div>
+        </div>
+    </div>
+
+	<ul id="playlist">
+        <li>
+            <a data="http://www.archive.org/download/bolero_69/Bolero.mp3">Ravel Bolero </a>
+        </li>
+        <li>
+            <a data="http://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">Moonlight Sonata - Beethoven</a>
+        </li>
+        <li>
+            <a data="http://www.archive.org/download/CanonInD_261/CanoninD.mp3">Canon in D Pachabel </a>
+        </li>
+        <li>
+            <a data="http://www.archive.org/download/bolero_69/Bolero.mp3">Ravel Bolero </a>
+        </li>
+        <li>
+            <a data="http://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">Moonlight Sonata - Beethoven</a>
+        </li>
+        <li>
+            <a data="http://www.archive.org/download/CanonInD_261/CanoninD.mp3">Canon in D Pachabel </a>
+        </li>
+        <li>
+            <a data="http://www.archive.org/download/MoonlightSonata_755/Beethoven-MoonlightSonata.mp3">Moonlight Sonata - Beethoven</a>
+        </li>
+    </ul>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="audio.js"></script>
+</body>
+</html>
